@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery.min.js"></script>
+    <script src="form.js"></script>
+
+    <style>
+        #file {
+            display: none;
+        }
+
+        #loadButton {
+            background: #34a9d8;
+            padding: 10px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input id='file' onchange="sendData(this)" type="file"/>
+        <label for="file" id="loadButton">Load file</label>
+    </form>
+
+<span id="progress"></span>
+</body>
+</html>
